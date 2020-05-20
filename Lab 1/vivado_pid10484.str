@@ -1,0 +1,958 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 10484
+License: Customer
+
+Current time: 	Tue May 19 17:10:22 IST 2020
+Time zone: 	India Standard Time (Asia/Colombo)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 60 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	M.F.M.MUAZ
+User home directory: C:/Users/M.F.M.MUAZ
+User working directory: C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.2
+RDI_DATADIR: C:/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/M.F.M.MUAZ/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/M.F.M.MUAZ/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/M.F.M.MUAZ/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1/vivado.log
+Vivado journal file location: 	C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1/vivado.jou
+Engine tmp dir: 	C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1/.Xil/Vivado-10484-DELL-MU123AZ
+
+Xilinx Environment Variables
+----------------------------
+KINECTSDK20_DIR: C:\Program Files\Microsoft SDKs\Kinect\v2.0_1409\
+NO_XILINX_DATA_LICENSE: HIDDEN
+XILINX: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: E:\Softwares\Xilinx\Xilinx_14.7\xilinx_ise.lic
+XILINX_DSP: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 690 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\M.F.M.MUAZ\Desktop\HDL lab\HDL_Labs\Lab 1\Lab 1.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1/Lab 1.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1/Lab 1.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Dell/Desktop/HDL_Labs/Lab 1' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 97 MB (+99438kb) [00:00:17]
+// [Engine Memory]: 732 MB (+615700kb) [00:00:17]
+// [GUI Memory]: 112 MB (+10084kb) [00:00:17]
+// WARNING: HEventQueue.dispatchEvent() is taking  4990 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1016 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 50 MB. Current time: 5/19/20, 5:10:30 PM IST
+// Tcl Message: open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 775.055 ; gain = 120.586 
+// Project name: Lab 1; location: C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bB (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 49 MB. Current time: 5/19/20, 5:40:35 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 45 MB. Current time: 5/19/20, 6:10:35 PM IST
+// WARNING: HEventQueue.dispatchEvent() is taking  1810172 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 44 MB. Current time: 5/19/20, 6:47:12 PM IST
+// WARNING: HEventQueue.dispatchEvent() is taking  1281 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7639 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 44 MB. Current time: 5/19/20, 7:17:15 PM IST
+// WARNING: HEventQueue.dispatchEvent() is taking  6098344 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 44 MB. Current time: 5/19/20, 9:06:17 PM IST
+// WARNING: HEventQueue.dispatchEvent() is taking  1258 ms.
+// Elapsed time: 14168 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenuItem(PAResourceCommand.PACommandNames_NEW_PROJECT, "New..."); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// f (cr): New Project: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// Elapsed time: 64 seconds
+setText(PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, "C:/Users/M.F.M.MUAZ/Desktop/Test_lab"); // ao (an, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// WARNING: HEventQueue.dispatchEvent() is taking  3301 ms.
+// Elapsed time: 11 seconds
+selectTab(PAResourceOtoP.PartChooser_TABBED_PANE, (HResource) null, "Boards", 1); // i (T, f)
+// Elapsed time: 10 seconds
+selectTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Basys3 ; Basys3 ; digilentinc.com ; 1.1 ; xc7a35tcpg236-1 ; 236 ; C.0 ; 106 ; 20800 ; 41600 ; 50 ; 0 ; 90 ; 2 ; 2 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 5 ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 7, "Basys3", 0); // d (O, f)
+selectTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Arty ; Arty ; digilentinc.com ; 1.1 ; xc7a35ticsg324-1L ; 324 ; C.0 ; 210 ; 20800 ; 41600 ; 50 ; 0 ; 90 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 5 ; -40 ; 100 ; 100 ; I ; 0.92 ; 0.92 ; 0.98", 6, "Arty", 0); // d (O, f)
+selectTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Basys3 ; Basys3 ; digilentinc.com ; 1.1 ; xc7a35tcpg236-1 ; 236 ; C.0 ; 106 ; 20800 ; 41600 ; 50 ; 0 ; 90 ; 2 ; 2 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 5 ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 7, "Basys3", 0); // d (O, f)
+selectTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Basys3 ; Basys3 ; digilentinc.com ; 1.1 ; xc7a35tcpg236-1 ; 236 ; C.0 ; 106 ; 20800 ; 41600 ; 50 ; 0 ; 90 ; 2 ; 2 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 5 ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 7, "Basys3", 0); // d (O, f)
+selectTab(PAResourceOtoP.PartChooser_TABBED_PANE, (HResource) null, "Parts", 0); // i (T, f)
+selectTab(PAResourceOtoP.PartChooser_TABBED_PANE, (HResource) null, "Boards", 1); // i (T, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// bB (f):  Create Project : addNotify
+// Elapsed time: 18 seconds
+selectButton("OptionPane.button", "No"); // JButton (A, H)
+// Tcl Message: create_project project_1 C:/Users/M.F.M.MUAZ/Desktop/Test_lab/project_1 -part xc7a35tcpg236-1 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  4245 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: create_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 833.063 ; gain = 20.316 
+// TclEventType: BOARD_MODIFIED
+// Tcl Message: set_property board_part digilentinc.com:basys3:part0:1.1 [current_project] 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property target_language VHDL [current_project] 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property simulator_language VHDL [current_project] 
+// Elapsed time: 15 seconds
+selectButton("FINISH", "Finish"); // JButton (j, f)
+// 'g' command handler elapsed time: 176 seconds
+dismissDialog("Create Project"); // bB (f)
+dismissDialog("New Project"); // f (cr)
+// Elapsed time: 32 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // E (f, c)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File..."); // ai (ao, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, (String) null); // ac (Q, F)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, (String) null); // ac (Q, F)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, (String) null); // ac (Q, F)
+// Elapsed time: 31 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+// 'h' command handler elapsed time: 69 seconds
+dismissDialog("Add Sources"); // c (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // af (cr)
+selectMenuItem(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "C:/Users/M.F.M.MUAZ/project_1/project_1.xpr"); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+// Opening Vivado Project: C:/Users/M.F.M.MUAZ/project_1/project_1.xpr. Version: Vivado v2019.2 
+// bB (cr):  Open Project : addNotify
+selectButton("OptionPane.button", "No"); // JButton (A, G)
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// Tcl Message: open_project C:/Users/M.F.M.MUAZ/project_1/project_1.xpr 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 118 MB (+205kb) [04:01:43]
+// WARNING: HEventQueue.dispatchEvent() is taking  2571 ms.
+// Project name: project_1(2); location: C:/Users/M.F.M.MUAZ/project_1; part: xc7a35tcpg236-1
+// [GUI Memory]: 127 MB (+3633kb) [04:01:44]
+dismissDialog("Open Project"); // bB (cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // B (F, cr)
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 12 seconds
+selectButton(PAResourceEtoH.FileSetPanel_MESSAGES, "1"); // h (f, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, schemetic(Behavioral) (schemetic.vhd)]", 1); // B (F, cr)
+// Elapsed time: 98 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+// 'h' command handler elapsed time: 9 seconds
+dismissDialog("Add Sources"); // c (cr)
+// Elapsed time: 26 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // E (f, c)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File..."); // ai (ao, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, (String) null); // ac (Q, F)
+// Elapsed time: 34 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "Synchronizer.vhd"); // ac (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// Tcl Command: 'file mkdir C:/Users/M.F.M.MUAZ/Desktop/Test_lab/project_1/project_1.srcs/sources_1/new'
+dismissDialog("Create Source File"); // F (c)
+// Tcl Message: file mkdir C:/Users/M.F.M.MUAZ/Desktop/Test_lab/project_1/project_1.srcs/sources_1/new 
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; Synchronizer.vhd ; xil_defaultlib ; <Local to Project>", 0, "Synchronizer.vhd", 2); // bQ (O, c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 59 seconds
+dismissDialog("Add Sources"); // c (cr)
+// Tcl Message: current_project project_1 
+// Tcl Message: close [ open C:/Users/M.F.M.MUAZ/Desktop/Test_lab/project_1/project_1.srcs/sources_1/new/Synchronizer.vhd w ] 
+// bB (cr):  Add Sources  : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/M.F.M.MUAZ/Desktop/Test_lab/project_1/project_1.srcs/sources_1/new/Synchronizer.vhd 
+// I (cr): Define Module: addNotify
+dismissDialog("Add Sources"); // bB (cr)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton (A, H)
+dismissDialog("Define Module"); // I (cr)
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 486ms to process. Increasing delay to 3000 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (Synchronizer.vhd) elapsed time: 0.5s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Synchronizer(Behavioral) (Synchronizer.vhd)]", 1, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Synchronizer(Behavioral) (Synchronizer.vhd)]", 1, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Synchronizer(Behavioral) (Synchronizer.vhd)]", 1, false); // B (F, cr)
+// [GUI Memory]: 133 MB (+143kb) [04:06:07]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Synchronizer(Behavioral) (Synchronizer.vhd)]", 1, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Synchronizer(Behavioral) (Synchronizer.vhd)]", 1, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Synchronizer(Behavioral) (Synchronizer.vhd)]", 1, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Synchronizer(Behavioral) (Synchronizer.vhd)]", 1, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Synchronizer(Behavioral) (Synchronizer.vhd)]", 1, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, Popup.HeavyWeightWindow)
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Source Node Properties..."); // ai (ao, Popup.HeavyWeightWindow)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+// Elapsed time: 15 seconds
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // i (c, cr)
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "General", 0); // i (c, cr)
+// Elapsed time: 12 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("CANCEL", "Cancel"); // JButton (j, c)
+dismissDialog("Add Sources"); // c (cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Synchronizer(Behavioral) (Synchronizer.vhd)]", 1, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Synchronizer(Behavioral) (Synchronizer.vhd)]", 1, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Synchronizer(Behavioral) (Synchronizer.vhd)]", 1, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Synchronizer(Behavioral) (Synchronizer.vhd)]", 1, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cr)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // aa (q, cr)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // aa (q, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Synchronizer(Behavioral) (Synchronizer.vhd)]", 1, false); // B (F, cr)
+// Elapsed time: 14 seconds
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aL (aI, cr)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aL (aI, cr)
+// Elapsed time: 23 seconds
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 13); // u (O, cr)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 13); // u (O, cr)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 13); // u (O, cr)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 13); // u (O, cr)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 11); // u (O, cr)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 11); // u (O, cr)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 11); // u (O, cr)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 11); // u (O, cr)
+// Elapsed time: 100 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// WARNING: HEventQueue.dispatchEvent() is taking  2292 ms.
+// bB (SwingUtilities.SharedOwnerFrame):  Open IP Catalog : addNotify
+// Elapsed time: 17 seconds
+dismissDialog("Open IP Catalog"); // bB (SwingUtilities.SharedOwnerFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Synchronizer.vhd", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Synchronizer.vhd", 1); // i (h, cr)
+closeView(PAResourceOtoP.PAViews_IP_CATALOG, "IP Catalog"); // W
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Synchronizer(Behavioral) (Synchronizer.vhd)]", 1, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Synchronizer(Behavioral) (Synchronizer.vhd)]", 1, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+// Elapsed time: 11 seconds
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, Popup.HeavyWeightWindow)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Synchronizer(Behavioral) (Synchronizer.vhd)]", 1, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ai (ao, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("CANCEL", "Cancel"); // JButton (j, c)
+// 'h' command handler elapsed time: 3 seconds
+// [GUI Memory]: 141 MB (+1029kb) [04:10:57]
+dismissDialog("Add Sources"); // c (cr)
+// Elapsed time: 27 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; Not started ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Vivado Synthesis Defaults (Vivado Synthesis 2019) ; Vivado Synthesis Default Reports (Vivado Synthesis 2019) ; xc7a35tcpg236-1 ; Vivado Synthesis Defaults", 0, "synth_1", 0, true); // az (O, cr) - Node
+// PAPropertyPanels.initPanels (synth_1) elapsed time: 0.8s
+// WARNING: HEventQueue.dispatchEvent() is taking  1187 ms.
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Not started ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Vivado Implementation Defaults (Vivado Implementation 2019) ; Vivado Implementation Default Reports (Vivado Implementation 2019) ; xc7a35tcpg236-1 ; Default settings for Implementation.", 1, "impl_1", 0, false); // az (O, cr)
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.2s
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; Not started ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Vivado Synthesis Defaults (Vivado Synthesis 2019) ; Vivado Synthesis Default Reports (Vivado Synthesis 2019) ; xc7a35tcpg236-1 ; Vivado Synthesis Defaults", 0, "synth_1", 0, true); // az (O, cr) - Node
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aL (aI, cr)
+selectTab((HResource) null, (HResource) null, "Log", 2); // aL (aI, cr)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aL (aI, cr)
+// Elapsed time: 677 seconds
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "General", 5); // i (c, cr)
+// RDIResource.RDIViews_PROPERTIES: Synthesis Run Properties: close view
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // i (N, cr)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Compile Order", 2); // i (N, cr)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i (N, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Synchronizer(Behavioral) (Synchronizer.vhd)]", 1, false); // B (F, cr)
+selectButton(RDIResourceCommand.RDICommands_SETTINGS, "settings"); // E (f, cr)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// I (cr): Settings: addNotify
+// 'dy' command handler elapsed time: 5 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  5919 ms.
+// Elapsed time: 10 seconds
+dismissDialog("Settings"); // I (cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Synchronizer(Behavioral) (Synchronizer.vhd)]", 1, false); // B (F, cr)
+selectButton(RDIResourceCommand.RDICommands_DELETE, "global_delete"); // E (f, cr)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete the project local file/directory from disk", true); // g (Q, aE): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+// 'c' command handler elapsed time: 9 seconds
+// [GUI Memory]: 158 MB (+10197kb) [04:23:46]
+dismissDialog("Remove Sources"); // aE (cr)
+// aE (cr): Remove Sources: addNotify
+// bB (aE):  Remove Sources : addNotify
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/M.F.M.MUAZ/Desktop/Test_lab/project_1/project_1.srcs/sources_1/new/Synchronizer.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// PAPropertyPanels.initPanels (synth_1) elapsed time: 0.3s
+// Tcl Message: remove_files  C:/Users/M.F.M.MUAZ/Desktop/Test_lab/project_1/project_1.srcs/sources_1/new/Synchronizer.vhd 
+// Tcl Message: file delete -force C:/Users/M.F.M.MUAZ/Desktop/Test_lab/project_1/project_1.srcs/sources_1/new/Synchronizer.vhd 
+dismissDialog("Remove Sources"); // bB (aE)
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // E (f, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 10 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "syncronizer"); // ac (Q, F)
+// Elapsed time: 13 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 38 seconds
+dismissDialog("Add Sources"); // c (cr)
+// Tcl Message: close [ open C:/Users/M.F.M.MUAZ/Desktop/Test_lab/project_1/project_1.srcs/sources_1/new/syncronizer.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/M.F.M.MUAZ/Desktop/Test_lab/project_1/project_1.srcs/sources_1/new/syncronizer.vhd 
+// I (cr): Define Module: addNotify
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // E (f, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 0, (String) null, 0); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "Reset", 0, "Port Name", 0); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 1, (String) null, 0); // ab (O, I)
+// Elapsed time: 16 seconds
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // E (f, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "Walk Request", 1, "Port Name", 0); // ab (O, I)
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // E (f, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 2, (String) null, 0); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 2, (String) null, 0); // ab (O, I)
+// Elapsed time: 13 seconds
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "Sensor", 2, "Port Name", 0); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 3, (String) null, 0); // ab (O, I)
+// Elapsed time: 11 seconds
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // E (f, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "Reprogram", 3, "Port Name", 0); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 4, "in", 1); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "out", 4, "Direction", 1); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; out ; false ; 0 ; 0", 4, (String) null, 0); // ab (O, I)
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 101 MB. Current time: 5/19/20, 9:36:18 PM IST
+// Elapsed time: 27 seconds
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // E (f, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "Reset_sync", 4, "Port Name", 0); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 5, "in", 1); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "out", 5, "Direction", 1); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; out ; false ; 0 ; 0", 5, (String) null, 0); // ab (O, I)
+// Elapsed time: 15 seconds
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // E (f, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "Sensor_sync", 5, "Port Name", 0); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 6, "in", 1); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "out", 6, "Direction", 1); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; out ; false ; 0 ; 0", 6, (String) null, 0); // ab (O, I)
+// Elapsed time: 27 seconds
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // E (f, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "WR_sync", 6, "Port Name", 0); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 7, "in", 1); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "out", 7, "Direction", 1); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; out ; false ; 0 ; 0", 7, (String) null, 0); // ab (O, I)
+// Elapsed time: 15 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "Prog_sync", 7, "Port Name", 0); // ab (O, I)
+// [GUI Memory]: 170 MB (+4222kb) [04:27:35]
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 14 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, syncronizer.vhd]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, syncronizer.vhd]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, syncronizer.vhd]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("syncronizer.vhd", 115, 100); // ch (w, cr)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 75 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, schemetic(Behavioral) (schemetic.vhd), and_1 : and_gate(Behavioral) (and.vhd)]", 2, false); // B (F, cr)
+// Tcl Message: current_project project_1(2) 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, schemetic(Behavioral) (schemetic.vhd), and_1 : and_gate(Behavioral) (and.vhd)]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Elapsed time: 1129 seconds
+selectCodeEditor("syncronizer.vhd", 163, 89); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 115 MB. Current time: 5/19/20, 10:06:19 PM IST
+// Elapsed time: 2247 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, syncronizer(Behavioral) (syncronizer.vhd)]", 1, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, syncronizer(Behavioral) (syncronizer.vhd)]", 1, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, Popup.HeavyWeightWindow)
+// Elapsed time: 10 seconds
+selectMenuItem(PAResourceQtoS.SrcMenu_SET_LIBRARY, "Set Library..."); // ai (ao, Popup.HeavyWeightWindow)
+// Z (cr): Set Library: addNotify
+dismissDialog("Set Library"); // Z (cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // B (F, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 111 MB. Current time: 5/19/20, 10:36:19 PM IST
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 6); // B (F, cr)
+// WARNING: HEventQueue.dispatchEvent() is taking  357185 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 111 MB. Current time: 5/19/20, 11:10:56 PM IST
+// WARNING: HEventQueue.dispatchEvent() is taking  7159 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1850 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3698 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 112 MB. Current time: 5/19/20, 11:40:53 PM IST
+// WARNING: HEventQueue.dispatchEvent() is taking  1536150 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  40699372 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1436 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 112 MB. Current time: 5/20/20, 11:25:04 AM IST
+// WARNING: HEventQueue.dispatchEvent() is taking  8731 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7385 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 40701444 ms. Increasing delay to 122104332 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 40701434 ms. Increasing delay to 122104302 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 111 MB. Current time: 5/20/20, 11:55:07 AM IST
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 785 ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2764 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1727 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 112 MB. Current time: 5/20/20, 12:56:30 PM IST
+// WARNING: HEventQueue.dispatchEvent() is taking  8745 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 111 MB. Current time: 5/20/20, 1:26:32 PM IST
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 9926 ms to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 10451 ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  12805484 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  15436 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 112 MB. Current time: 5/20/20, 5:07:15 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 111 MB. Current time: 5/20/20, 5:37:01 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 111 MB. Current time: 5/20/20, 6:07:01 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 111 MB. Current time: 5/20/20, 6:37:02 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 111 MB. Current time: 5/20/20, 7:07:02 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 111 MB. Current time: 5/20/20, 7:37:03 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 111 MB. Current time: 5/20/20, 8:07:03 PM IST
+// WARNING: HEventQueue.dispatchEvent() is taking  3167892 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 111 MB. Current time: 5/20/20, 9:00:21 PM IST
+// WARNING: HEventQueue.dispatchEvent() is taking  10379 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2814 ms.
+// Elapsed time: 80989 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 18 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "FSM.vhd"); // ac (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 28 seconds
+dismissDialog("Add Sources"); // c (cr)
+// bB (cr):  Add Sources  : addNotify
+// Tcl Message: current_project project_1 
+// Tcl Message: close [ open C:/Users/M.F.M.MUAZ/Desktop/Test_lab/project_1/project_1.srcs/sources_1/new/FSM.vhd w ] 
+// Tcl Message: add_files C:/Users/M.F.M.MUAZ/Desktop/Test_lab/project_1/project_1.srcs/sources_1/new/FSM.vhd 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// PAPropertyPanels.initPanels (syncronizer.vhd) elapsed time: 0.5s
+// I (cr): Define Module: addNotify
+dismissDialog("Add Sources"); // bB (cr)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 0, (String) null, 0); // ab (O, I)
+// Elapsed time: 46 seconds
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "Sensor_Sync", 0, "Port Name", 0); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 1, (String) null, 0); // ab (O, I)
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // E (f, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "WR", 1, "Port Name", 0); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 2, (String) null, 0); // ab (O, I)
+// Elapsed time: 21 seconds
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // E (f, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "Prog_Sync", 2, "Port Name", 0); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 3, (String) null, 0); // ab (O, I)
+// Elapsed time: 24 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "expired", 3, "Port Name", 0); // ab (O, I)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I (cr)
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 729ms to process. Increasing delay to 4000 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 178 MB (+38kb) [27:58:41]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 389 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM(Behavioral) (FSM.vhd)]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM(Behavioral) (FSM.vhd)]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("FSM.vhd", 260, 131); // ch (w, cr)
+// Elapsed time: 99 seconds
+selectCodeEditor("FSM.vhd", 324, 116); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 97 MB. Current time: 5/20/20, 9:30:15 PM IST
+// Elapsed time: 1526 seconds
+selectCodeEditor("FSM.vhd", 34, 387); // ch (w, cr)
+typeControlKey((HResource) null, "FSM.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 101 seconds
+selectCodeEditor("FSM.vhd", 7, 219); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 236, 372); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 277, 166); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("FSM.vhd", 145, 148); // ch (w, cr)
+typeControlKey((HResource) null, "FSM.vhd", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "FSM.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 29 seconds
+selectCodeEditor("FSM.vhd", 117, 333); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 117, 333, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("FSM.vhd", 94, 163); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 94, 163, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "FSM.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 110, 334); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 110, 334, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "FSM.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 213, 330); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 87, 128); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 87, 128, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "FSM.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 240, 336); // ch (w, cr)
+typeControlKey((HResource) null, "FSM.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 269 seconds
+selectCodeEditor("FSM.vhd", 94, 160); // ch (w, cr)
+// Elapsed time: 546 seconds
+typeControlKey((HResource) null, "FSM.vhd", 'c'); // ch (w, cr)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 11 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "FSM.vhd"); // ac (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// Tcl Command: 'file mkdir C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1/Lab 1.srcs/sources_1/new'
+dismissDialog("Create Source File"); // F (c)
+// Tcl Message: file mkdir C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1/Lab 1.srcs/sources_1/new 
+// Tcl Command: 'file mkdir C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1/Lab 1.srcs/sources_1/new'
+// Tcl Message: file mkdir C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1/Lab 1.srcs/sources_1/new 
+// Tcl Command: 'file mkdir C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1/Lab 1.srcs/sources_1/new'
+// Tcl Command: 'file mkdir C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1/Lab 1.srcs/sources_1/new'
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 22 seconds
+// Tcl Command: 'file mkdir C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1/Lab 1.srcs/sources_1/new'
+// Tcl Message: file mkdir C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1/Lab 1.srcs/sources_1/new 
+// Tcl Message: file mkdir C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1/Lab 1.srcs/sources_1/new 
+dismissDialog("Add Sources"); // c (cr)
+// bB (cr):  Add Sources  : addNotify
+// Tcl Command: 'file mkdir C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1/Lab 1.srcs/sources_1/new'
+// Tcl Message: file mkdir C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1/Lab 1.srcs/sources_1/new 
+// Tcl Message: file mkdir C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1/Lab 1.srcs/sources_1/new 
+// Tcl Message: current_project {Lab 1} 
+// Tcl Message: file mkdir {C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1/Lab 1.srcs/sources_1/new} 
+// Tcl Message: close [ open {C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1/Lab 1.srcs/sources_1/new/FSM.vhd} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1/Lab 1.srcs/sources_1/new/FSM.vhd}} 
+// I (cr): Define Module: addNotify
+dismissDialog("Add Sources"); // bB (cr)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton (A, H)
+dismissDialog("Define Module"); // I (cr)
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 460ms to process. Increasing delay to 3000 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  1014 ms.
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (FSM.vhd) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM(Behavioral) (FSM.vhd)]", 1, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM(Behavioral) (FSM.vhd)]", 1, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM(Behavioral) (FSM.vhd)]", 1, false, false, false, false, false, true); // B (F, cr) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 97 MB. Current time: 5/20/20, 10:00:15 PM IST
+selectCodeEditor("FSM.vhd", 157, 128); // ch (w, cr)
+typeControlKey((HResource) null, "FSM.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 54 seconds
+typeControlKey(null, null, 'z');
+selectCodeEditor("FSM.vhd", 143, 200); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 351, 238); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 2, 181); // ch (w, cr)
+typeControlKey((HResource) null, "FSM.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 221, 276); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("FSM.vhd", 39, 194); // ch (w, cr)
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "FSM.vhd", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 662ms to process. Increasing delay to 4000 ms.
+// Elapsed time: 28 seconds
+selectCodeEditor("FSM.vhd", 74, 46); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 135, 130); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 105, 64); // ch (w, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("FSM.vhd", 59, 150); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 65, 135); // ch (w, cr)
+typeControlKey(null, null, 'z');
+// Elapsed time: 20 seconds
+selectCodeEditor("FSM.vhd", 153, 131); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("FSM.vhd", 77, 128); // ch (w, cr)
+// Elapsed time: 22 seconds
+selectCodeEditor("FSM.vhd", 200, 80); // ch (w, cr)
+// Elapsed time: 29 seconds
+typeControlKey(null, null, 'z');
+// Elapsed time: 109 seconds
+selectCodeEditor("FSM.vhd", 164, 175); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 164, 175, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("FSM.vhd", 164, 175); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 154, 179); // ch (w, cr)
+typeControlKey((HResource) null, "FSM.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 185, 195); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 185, 195, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("FSM.vhd", 185, 195); // ch (w, cr)
+typeControlKey((HResource) null, "FSM.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 63 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "FSM.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 17 seconds
+typeControlKey((HResource) null, "FSM.vhd", 'c'); // ch (w, cr)
+// Elapsed time: 39 seconds
+typeControlKey((HResource) null, "FSM.vhd", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 97 MB. Current time: 5/20/20, 10:30:15 PM IST
+// Elapsed time: 1536 seconds
+selectCodeEditor("FSM.vhd", 271, 64); // ch (w, cr)
+// Elapsed time: 29 seconds
+typeControlKey((HResource) null, "FSM.vhd", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "FSM.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 1392 seconds
+typeControlKey((HResource) null, "FSM.vhd", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "FSM.vhd", 'v'); // ch (w, cr)
+typeControlKey((HResource) null, "FSM.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 22 seconds
+typeControlKey((HResource) null, "FSM.vhd", 'v'); // ch (w, cr)
+typeControlKey((HResource) null, "FSM.vhd", 'v'); // ch (w, cr)
+typeControlKey((HResource) null, "FSM.vhd", 'v'); // ch (w, cr)
+typeControlKey((HResource) null, "FSM.vhd", 'v'); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 97 MB. Current time: 5/20/20, 11:00:15 PM IST
+// Elapsed time: 138 seconds
+selectCodeEditor("FSM.vhd", 381, 146); // ch (w, cr)
+typeControlKey((HResource) null, "FSM.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 58 seconds
+selectCodeEditor("FSM.vhd", 240, 95); // ch (w, cr)
+// Elapsed time: 22 seconds
+selectCodeEditor("FSM.vhd", 355, 99); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 355, 99, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("FSM.vhd", 355, 99); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 362, 63); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 362, 63, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 206 seconds
+selectCodeEditor("FSM.vhd", 406, 93); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("FSM.vhd", 436, 107); // ch (w, cr)
+// Elapsed time: 54 seconds
+selectCodeEditor("FSM.vhd", 420, 78); // ch (w, cr)
+// Elapsed time: 115 seconds
+selectCodeEditor("FSM.vhd", 276, 62); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("FSM.vhd", 338, 75); // ch (w, cr)
+// Elapsed time: 119 seconds
+selectCodeEditor("FSM.vhd", 221, 96); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 882 seconds
+selectCodeEditor("FSM.vhd", 136, 368); // ch (w, cr)
+// Elapsed time: 245 seconds
+selectCodeEditor("FSM.vhd", 177, 348); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 163, 367); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 97 MB. Current time: 5/20/20, 11:30:16 PM IST
+// Elapsed time: 211 seconds
+selectCodeEditor("FSM.vhd", 146, 331); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 126, 351); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 153, 336); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 131, 346); // ch (w, cr)
+// Elapsed time: 106 seconds
+selectCodeEditor("FSM.vhd", 203, 433); // ch (w, cr)
+// Elapsed time: 56 seconds
+selectCodeEditor("FSM.vhd", 230, 301); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 230, 301); // ch (w, cr)
+// Elapsed time: 35 seconds
+selectCodeEditor("FSM.vhd", 265, 250); // ch (w, cr)
+// Elapsed time: 20 seconds
+selectCodeEditor("FSM.vhd", 289, 374); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("FSM.vhd", 251, 266); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 338, 349, true, false, false, false, false); // ch (w, cr) - Shift Key
+typeControlKey(null, null, 'z');
+selectCodeEditor("FSM.vhd", 293, 269); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 52 seconds
+selectCodeEditor("FSM.vhd", 204, 355); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 216, 350); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 242, 366); // ch (w, cr)
+// Elapsed time: 578 seconds
+selectCodeEditor("FSM.vhd", 421, 178); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 97 MB. Current time: 5/21/20, 12:00:16 AM IST
+// Elapsed time: 839 seconds
+selectCodeEditor("FSM.vhd", 172, 349); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("FSM.vhd", 213, 351); // ch (w, cr)
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 5495 ms to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 4069 ms to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 6843 ms. Increasing delay to 20529 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2 ms. Decreasing delay to 2002 ms.
+// Elapsed time: 699 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // B (F, cr)
+selectCodeEditor("FSM.vhd", 367, 304); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 148 seconds
+selectCodeEditor("FSM.vhd", 234, 336); // ch (w, cr)
+// Elapsed time: 41 seconds
+typeControlKey(null, null, 'z');
+selectCodeEditor("FSM.vhd", 109, 301); // ch (w, cr)
+// Elapsed time: 206 seconds
+selectCodeEditor("FSM.vhd", 282, 166); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 299, 205); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectCodeEditor("FSM.vhd", 210, 165); // ch (w, cr)
+// Elapsed time: 117 seconds
+selectCodeEditor("FSM.vhd", 204, 303); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 253, 314); // ch (w, cr)
+// Elapsed time: 30 seconds
+selectCodeEditor("FSM.vhd", 208, 295); // ch (w, cr)
+// Elapsed time: 40 seconds
+selectCodeEditor("FSM.vhd", 300, 361); // ch (w, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("FSM.vhd", 201, 317); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 222, 315); // ch (w, cr)
+// Elapsed time: 96 seconds
+selectCodeEditor("FSM.vhd", 314, 92); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 286, 119); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 242, 113); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 344, 187); // ch (w, cr)
+// Elapsed time: 33 seconds
+selectCodeEditor("FSM.vhd", 173, 351); // ch (w, cr)
+// Elapsed time: 36 seconds
+selectCodeEditor("FSM.vhd", 110, 271); // ch (w, cr)
+// Elapsed time: 26 seconds
+selectCodeEditor("FSM.vhd", 224, 297); // ch (w, cr)
+typeControlKey((HResource) null, "FSM.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 131, 363); // ch (w, cr)
+typeControlKey((HResource) null, "FSM.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 130, 195); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 136, 333); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 97 MB. Current time: 5/21/20, 12:30:16 AM IST
+// Elapsed time: 134 seconds
+selectCodeEditor("FSM.vhd", 112, 183); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 112, 198); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 112, 198); // ch (w, cr)
+// Elapsed time: 12 seconds
+typeControlKey((HResource) null, "FSM.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 189, 313); // ch (w, cr)
+typeControlKey((HResource) null, "FSM.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("FSM.vhd", 109, 215); // ch (w, cr)
+typeControlKey((HResource) null, "FSM.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 180, 328); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 251, 318); // ch (w, cr)
+typeControlKey((HResource) null, "FSM.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 111, 232); // ch (w, cr)
+typeControlKey((HResource) null, "FSM.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 293, 332); // ch (w, cr)
+typeControlKey((HResource) null, "FSM.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 161 seconds
+selectCodeEditor("FSM.vhd", 210, 318); // ch (w, cr)
+// Elapsed time: 42 seconds
+selectCodeEditor("FSM.vhd", 140, 351); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectCodeEditor("FSM.vhd", 159, 315); // ch (w, cr)
+typeControlKey((HResource) null, "FSM.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 224, 346); // ch (w, cr)
+typeControlKey((HResource) null, "FSM.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 25 seconds
+selectCodeEditor("FSM.vhd", 222, 384); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("FSM.vhd", 161, 403); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("FSM.vhd", 155, 401); // ch (w, cr)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("FSM.vhd", 81, 351); // ch (w, cr)
+// Elapsed time: 53 seconds
+selectCodeEditor("FSM.vhd", 209, 314); // ch (w, cr)
+// Elapsed time: 134 seconds
+selectCodeEditor("FSM.vhd", 137, 131); // ch (w, cr)
+typeControlKey((HResource) null, "FSM.vhd", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "FSM.vhd", 'v'); // ch (w, cr)
+typeControlKey((HResource) null, "FSM.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 181, 133); // ch (w, cr)
+// Elapsed time: 21 seconds
+selectCodeEditor("FSM.vhd", 177, 299); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 271, 165); // ch (w, cr)
+// Elapsed time: 28 seconds
+selectCodeEditor("FSM.vhd", 278, 92); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 222, 91); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 222, 227); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 280, 351); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 275, 266); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 280, 333); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 338, 317); // ch (w, cr)
+// Elapsed time: 57 seconds
+selectCodeEditor("FSM.vhd", 222, 148); // ch (w, cr)
+// Elapsed time: 72 seconds
+selectCodeEditor("FSM.vhd", 360, 167); // ch (w, cr)
+// Elapsed time: 24 seconds
+selectCodeEditor("FSM.vhd", 374, 299); // ch (w, cr)
+// Elapsed time: 27 seconds
+selectCodeEditor("FSM.vhd", 243, 282); // ch (w, cr)
+// Elapsed time: 46 seconds
+selectCodeEditor("FSM.vhd", 287, 294); // ch (w, cr)
+// Elapsed time: 46 seconds
+selectCodeEditor("FSM.vhd", 141, 319); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 208, 340); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 188, 337); // ch (w, cr)
+// Elapsed time: 29 seconds
+selectCodeEditor("FSM.vhd", 321, 303); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 245, 333); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("FSM.vhd", 139, 367); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 187, 384); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 194, 369); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 139, 247); // ch (w, cr)
+typeControlKey((HResource) null, "FSM.vhd", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "FSM.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 43 seconds
+selectCodeEditor("FSM.vhd", 194, 232); // ch (w, cr)
+selectCodeEditor("FSM.vhd", 182, 297); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("FSM.vhd", 193, 279); // ch (w, cr)
+// Elapsed time: 21 seconds
+selectCodeEditor("FSM.vhd", 236, 316); // ch (w, cr)
+// Elapsed time: 53 seconds
+selectCodeEditor("FSM.vhd", 264, 237); // ch (w, cr)

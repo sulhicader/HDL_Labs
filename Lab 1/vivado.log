@@ -2,19 +2,21 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Thu May 21 17:03:34 2020
-# Process ID: 29360
+# Start of session at: Thu May 21 20:26:52 2020
+# Process ID: 29308
 # Current directory: C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13356 C:\Users\M.F.M.MUAZ\Desktop\HDL lab\HDL_Labs\Lab 1\Lab 1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23384 C:\Users\M.F.M.MUAZ\Desktop\HDL lab\HDL_Labs\Lab 1\Lab 1.xpr
 # Log file: C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1/vivado.log
 # Journal file: C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project {C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1/Lab 1.xpr}
-INFO: [Project 1-313] Project file moved from 'C:/Users/Dell/Desktop/HD/HDL_Labs/Lab 1' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
-open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 822.879 ; gain = 172.234
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 740.270 ; gain = 160.973
+exit
+INFO: [Common 17-206] Exiting Vivadlaunch_simulation
+Command: launch

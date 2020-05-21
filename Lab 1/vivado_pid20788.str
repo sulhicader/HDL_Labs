@@ -1,0 +1,318 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 20788
+License: Customer
+
+Current time: 	Thu May 21 22:46:48 IST 2020
+Time zone: 	India Standard Time (Asia/Colombo)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 59 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	M.F.M.MUAZ
+User home directory: C:/Users/M.F.M.MUAZ
+User working directory: C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.2
+RDI_DATADIR: C:/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/M.F.M.MUAZ/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/M.F.M.MUAZ/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/M.F.M.MUAZ/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1/vivado.log
+Vivado journal file location: 	C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1/vivado.jou
+Engine tmp dir: 	C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1/.Xil/Vivado-20788-DELL-MU123AZ
+
+Xilinx Environment Variables
+----------------------------
+KINECTSDK20_DIR: C:\Program Files\Microsoft SDKs\Kinect\v2.0_1409\
+NO_XILINX_DATA_LICENSE: HIDDEN
+XILINX: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: E:\Softwares\Xilinx\Xilinx_14.7\xilinx_ise.lic
+XILINX_DSP: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 657 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\M.F.M.MUAZ\Desktop\HDL lab\HDL_Labs\Lab 1\Lab 1.xpr. Version: Vivado v2019.2 
+// bB (cr):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1/Lab 1.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1/Lab 1.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Dell/Desktop/HDL_Labs/Lab 1' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 112 MB (+115213kb) [00:00:14]
+// [Engine Memory]: 738 MB (+622012kb) [00:00:14]
+// WARNING: HEventQueue.dispatchEvent() is taking  3972 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 771 MB. GUI used memory: 51 MB. Current time: 5/21/20, 10:46:54 PM IST
+// Tcl Message: open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 823.156 ; gain = 185.348 
+// Project name: Lab 1; location: C:/Users/M.F.M.MUAZ/Desktop/HDL lab/HDL_Labs/Lab 1; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bB (cr)
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (TrafficLightController.vhd) elapsed time: 0.2s
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TrafficLightController(Behavioral) (TrafficLightController.vhd)]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TrafficLightController(Behavioral) (TrafficLightController.vhd)]", 5, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ai (ao, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// bB (cr):  Set as Top : addNotify
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top TrafficLightController [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Set as Top"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 15 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // B (F, cr)
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Timer.vhd]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Timer.vhd]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 6052 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5279 ms. Increasing delay to 15837 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6319 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4 ms. Decreasing delay to 2004 ms.
+// Elapsed time: 880 seconds
+selectButton(PAResourceEtoH.FileSetPanel_MESSAGES, "4"); // h (f, cr)
+// Elapsed time: 217 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Divider(Behavioral) (Divider.vhd)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Divider(Behavioral) (Divider.vhd)]", 4, false, false, false, false, false, true); // B (F, cr) - Double Click
+// PAResourceOtoP.PAViews_SOURCES: Sources: close view
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Divider.vhd", 2, true, false); // i (h, cr) - Popup Trigger
+selectMenuItem((HResource) null, "New Vertical Group"); // JMenuItem (JidePopupMenu)
+// Elapsed time: 33 seconds
+selectCodeEditor("Timer.vhd", 3, 109); // ch (w, cr)
+// Elapsed time: 171 seconds
+selectCodeEditor("Divider.vhd", 26, 238); // ch (w, cr)
+selectCodeEditor("Divider.vhd", 28, 230); // ch (w, cr)
+// Elapsed time: 23 seconds
+typeControlKey((HResource) null, "Divider.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 28, 217); // ch (w, cr)
+typeControlKey((HResource) null, "Timer.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 239, 265); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 233, 361); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 109, 262); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 254, 262); // ch (w, cr)
+// Elapsed time: 36 seconds
+selectCodeEditor("Divider.vhd", 0, 146); // ch (w, cr)
+// Elapsed time: 13 seconds
+typeControlKey((HResource) null, "Divider.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 28, 144); // ch (w, cr)
+typeControlKey((HResource) null, "Timer.vhd", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 54 seconds
+selectCodeEditor("Divider.vhd", 81, 350); // ch (w, cr)
+// Elapsed time: 10 seconds
+typeControlKey((HResource) null, "Divider.vhd", 'c'); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("Divider.vhd", 147, 298); // ch (w, cr)
+typeControlKey((HResource) null, "Divider.vhd", 'c'); // ch (w, cr)
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "Divider.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 111, 317); // ch (w, cr)
+typeControlKey((HResource) null, "Timer.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 19 seconds
+selectCodeEditor("Divider.vhd", 26, 379); // ch (w, cr)
+typeControlKey((HResource) null, "Divider.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 147, 406); // ch (w, cr)
+typeControlKey((HResource) null, "Timer.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 25 seconds
+selectCodeEditor("Timer.vhd", 85, 314); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 85, 314, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Timer.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 75, 403); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 75, 403, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Timer.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 179, 384); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 31 seconds
+selectCodeEditor("Divider.vhd", 61, 181); // ch (w, cr)
+// Elapsed time: 16 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("Divider.vhd", 26, 179); // ch (w, cr)
+typeControlKey((HResource) null, "Divider.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 69, 317); // ch (w, cr)
+typeControlKey((HResource) null, "Timer.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 62, 315); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 262, 335); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("Divider.vhd", 55, 197); // ch (w, cr)
+// Elapsed time: 12 seconds
+typeControlKey((HResource) null, "Divider.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 113, 350); // ch (w, cr)
+typeControlKey((HResource) null, "Timer.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 82, 367); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 771 MB. GUI used memory: 55 MB. Current time: 5/21/20, 11:16:56 PM IST
+// Elapsed time: 35 seconds
+selectCodeEditor("Timer.vhd", 252, 338); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 211, 299); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 211, 299, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Timer.vhd", 253, 299); // ch (w, cr)
+// Elapsed time: 14 seconds
+selectCodeEditor("Timer.vhd", 127, 233); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 127, 233, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 50 seconds
+selectCodeEditor("Timer.vhd", 124, 287); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 180, 284); // ch (w, cr)
+// Elapsed time: 326 seconds
+selectCodeEditor("Timer.vhd", 196, 333); // ch (w, cr)
+// Elapsed time: 38 seconds
+selectCodeEditor("Timer.vhd", 296, 329); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 211, 334); // ch (w, cr)
+// Elapsed time: 48 seconds
+selectCodeEditor("Timer.vhd", 255, 314); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 147, 335); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 147, 335); // ch (w, cr)
+typeControlKey((HResource) null, "Timer.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("Timer.vhd", 256, 337); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 343, 333); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 361, 340); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 361, 334); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 210, 351); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 194, 350); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 102, 349); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 182, 335); // ch (w, cr)
+// Elapsed time: 43 seconds
+selectCodeEditor("Timer.vhd", 220, 379); // ch (w, cr)
+typeControlKey((HResource) null, "Timer.vhd", 'v'); // ch (w, cr)
+typeControlKey(null, null, 'z');
+// Elapsed time: 12 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 275 seconds
+selectCodeEditor("Timer.vhd", 105, 281); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 140, 281); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 106, 281); // ch (w, cr)
+// Elapsed time: 33 seconds
+selectCodeEditor("Timer.vhd", 180, 281); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 216, 283); // ch (w, cr)
+// Elapsed time: 99 seconds
+selectCodeEditor("Timer.vhd", 86, 300); // ch (w, cr)
+// Elapsed time: 31 seconds
+selectCodeEditor("Timer.vhd", 202, 92); // ch (w, cr)
+typeControlKey((HResource) null, "Timer.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 150, 311); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("Timer.vhd", 169, 278); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 207, 316); // ch (w, cr)
+// Elapsed time: 49 seconds
+selectCodeEditor("Timer.vhd", 182, 321); // ch (w, cr)
+// Elapsed time: 21 seconds
+selectCodeEditor("Timer.vhd", 100, 97); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 100, 97, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Timer.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 109, 309); // ch (w, cr)
+typeControlKey((HResource) null, "Timer.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 100 seconds
+selectCodeEditor("Timer.vhd", 77, 198); // ch (w, cr)
+// Elapsed time: 36 seconds
+selectCodeEditor("Timer.vhd", 79, 193); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 298, 318); // ch (w, cr)
+// Elapsed time: 38 seconds
+selectCodeEditor("Timer.vhd", 111, 362); // ch (w, cr)
+// Elapsed time: 20 seconds
+selectCodeEditor("Timer.vhd", 110, 383); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 125, 400); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 78, 384); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 78, 384); // ch (w, cr)
+typeControlKey((HResource) null, "Timer.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 87, 383); // ch (w, cr)
+typeControlKey((HResource) null, "Timer.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 18 seconds
+selectCodeEditor("Timer.vhd", 110, 297); // ch (w, cr)
+typeControlKey((HResource) null, "Timer.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("Timer.vhd", 221, 216); // ch (w, cr)
+typeControlKey((HResource) null, "Timer.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 25 seconds
+selectCodeEditor("Timer.vhd", 152, 222); // ch (w, cr)
+// Elapsed time: 45 seconds
+selectCodeEditor("Timer.vhd", 52, 335); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE

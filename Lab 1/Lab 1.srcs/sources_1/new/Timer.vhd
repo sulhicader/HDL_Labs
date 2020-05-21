@@ -21,6 +21,7 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+USE ieee.numeric_std.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -42,23 +43,31 @@ entity Timer is
 end Timer;
 
 architecture Behavioral of Timer is
-    signal time_left : STD_LOGIC_VECTOR(0 to 3) ;
-    signal started : STD_LOGIC := '0' ;
+signal wrap : std_logic := '0';
+signal count : integer := 0;
+signal int_value : integer := to_integer(signed(value));
     
 begin
-    process(Clk) is
-        begin
-            if rising_edge(Clk) then
-                if Reset_Sync='1'  then
-                    time_left <= value;
+    process (Clk, Reset_Sync)
+    begin
+    if (Reset_Sync = '1') then
+        count <= 0;
+        wrap <= '0';
+    else
+        if (start_timer='1') then 
+            if rising_edge(clk) then            
+                if (count = int_value) then
+                    wrap <= '1';
+                    count <= 0;
+                else
+                    wrap <= '0';
+                    if (hz_enable='1') then
+                        count <= count + 1;
+                    end if;
                 end if;
-                
-                if (start_timer = '1' and and started ='0'):
-                    
-                end if;
-                
-                
-                
             end if;
+        end if;
+    end if;
     end process;
+    expired <= wrap;
 end Behavioral;

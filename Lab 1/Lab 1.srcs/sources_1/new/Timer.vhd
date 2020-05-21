@@ -32,7 +32,13 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Timer is
---  Port ( );
+  Port (Time_Parameter_Selector : in std_logic_vector(0 to 1);
+        Time_Value : in std_logic_vector(0 to 3);
+        Reset_Sync : in std_logic_vector;
+        Prog_Sync : in std_logic_vector;
+        interval : in std_logic_vector(0 to 1);
+        value : out std_logic_vector(0 to 3));
+        
 end Timer;
 
 architecture Behavioral of Timer is

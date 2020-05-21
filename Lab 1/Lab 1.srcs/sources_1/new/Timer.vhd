@@ -32,18 +32,33 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Timer is
-  Port (Time_Parameter_Selector : in std_logic_vector(0 to 1);
-        Time_Value : in std_logic_vector(0 to 3);
-        Reset_Sync : in std_logic_vector;
-        Prog_Sync : in std_logic_vector;
-        interval : in std_logic_vector(0 to 1);
-        value : out std_logic_vector(0 to 3));
+  Port (Reset_Sync : in STD_LOGIC;
+        hz_enable : in STD_LOGIC;
+        Clk : in STD_LOGIC;
+        start_timer : in STD_LOGIC;
+        expired : out STD_LOGIC;
+        value : in std_logic_vector(0 to 3));
         
 end Timer;
 
 architecture Behavioral of Timer is
-
+    signal time_left : STD_LOGIC_VECTOR(0 to 3) ;
+    signal started : STD_LOGIC := '0' ;
+    
 begin
-
-
+    process(Clk) is
+        begin
+            if rising_edge(Clk) then
+                if Reset_Sync='1'  then
+                    time_left <= value;
+                end if;
+                
+                if (start_timer = '1' and and started ='0'):
+                    
+                end if;
+                
+                
+                
+            end if;
+    end process;
 end Behavioral;

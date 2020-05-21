@@ -32,12 +32,51 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Time_Parameters is
---  Port ( );
+  Port (Time_Parameter_Selector : in std_logic_vector(0 to 1);
+        Time_Value : in std_logic_vector(0 to 3);
+        interval : in std_logic_vector(0 to 1);
+        Clk : in std_logic;
+        Reset_Sync : in std_logic;
+        Prog_Sync : in std_logic;
+        value : out std_logic_vector(0 to 3));
 end Time_Parameters;
 
 architecture Behavioral of Time_Parameters is
 
-begin
+signal tBASE : STD_LOGIC_VECTOR(0 to 3);
+signal tEX : STD_LOGIC_VECTOR(0 to 3);
+signal tYEL : STD_LOGIC_VECTOR(0 to 3); 
 
+begin
+    process(Clk, Reset_Sync) is
+    begin
+    if (Reset_Sync = '1') then
+        tBASE <= "0110";
+        tEX <= "0011";
+        tYEL <= "0010";
+    else
+        if rising_edge(clk) then
+            if (Prog_Sync='1') then
+                case Time_Parameter_Selector is
+                    when "00" =>
+                        tBASE <= Time_Value;
+                    when "01" =>
+                        tEX <= Time_Value;
+                    when "10" =>
+                        tYEL <= Time_Value;
+                 end case;
+            else
+                case interval is
+                    when "00" =>
+                        value <= tBASE;
+                    when "01" =>
+                        value <= tEX;
+                    when "10" =>
+                        value <= tYEL;
+                end case;
+             end if;
+        end if;
+    end if;
+    end process;
 
 end Behavioral;

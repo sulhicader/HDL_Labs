@@ -38,7 +38,7 @@ entity Divider is
 end Divider;
 
 architecture Behavioral of Divider is
-signal wrap : std_logic:= '0';
+signal wrap : std_logic := '0';
 signal count : integer := 0;
 constant clk_period : integer := 50000000 ;
 

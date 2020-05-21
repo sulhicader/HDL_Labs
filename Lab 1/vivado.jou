@@ -32,3 +32,12 @@ source Divider_tb.tcl
 close_sim
 launch_simulation
 source Divider_tb.tcl
+close_sim
+launch_simulation
+source Divider_tb.tcl
+close_sim
+launch_simulation
+source Divider_tb.tcl
+close_sim
+launch_simulation
+source Divider_tb.tcl

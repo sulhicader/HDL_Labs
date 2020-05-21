@@ -45,27 +45,33 @@ end synchronizer;
 
 architecture Behavioral of synchronizer is
     begin
-    process(Clk) is
-    begin
-        if rising_edge(Clk) then
-            if Reset='1'  then
-                Reset_Sync <= '1';
-            else
-                Reset_Sync <= '0';
-            
-            if Reprogram='1'  then
-                Prog_Sync <= '1';
-            else
-                Prog_Sync <= '0';
+        process(Clk) is
+        begin
+            if rising_edge(Clk) then
+                if Reset='1'  then
+                    Reset_Sync <= '1';
+                else
+                    Reset_Sync <= '0';
+                end if;
                 
-            if Sensor='1'  then
-                Sensor_Sync <= '1';
-            else
-                Sensor_Sync <= '0';
-            
-            if Walk_request='1'  then
-                WR_Sync <= '1';
-            else
-                WR_Sync <= '0';
-
+                if Reprogram='1'  then
+                    Prog_Sync <= '1';
+                else
+                    Prog_Sync <= '0';
+                end if;
+                    
+                if Sensor='1'  then
+                    Sensor_Sync <= '1';
+                else
+                    Sensor_Sync <= '0';
+                end if;
+                
+                if Walk_request='1'  then
+                    WR_Sync <= '1';
+                else
+                    WR_Sync <= '0';
+                end if;
+            end if;
+          end process;
+    
 end Behavioral;

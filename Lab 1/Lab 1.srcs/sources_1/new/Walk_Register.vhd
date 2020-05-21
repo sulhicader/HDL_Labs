@@ -32,12 +32,26 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Walk_Register is
---  Port ( );
+  Port ( WR_Sync : in STD_LOGIC;
+         Clk : in STD_LOGIC;
+         WR : out STD_LOGIC;
+         WR_Reset : in STD_LOGIC);
 end Walk_Register;
 
 architecture Behavioral of Walk_Register is
 
 begin
+    process(WR_Sync ,WR_Reset ) is
+        begin
+            if rising_edge(Clk) then
+                if WR_Sync='1'  then
+                    WR <= '1';
+                end if;
+                if  WR_Reset='1' then
+                    WR <= '0';
+                end if;
+            end if;
+        end process;
 
 
 end Behavioral;
